@@ -1,0 +1,7 @@
+create table user(
+id int primary key auto_increment,
+nome varchar(20),
+usuario varchar(10),
+senha varchar(10));
+
+Criar campo 'status' na tabela 'venda' do tipo varchar(20)

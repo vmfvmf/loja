@@ -1,0 +1,71 @@
+﻿
+.produto{
+	width:25%;
+	float:left;
+	height:300px;
+	text-align:center;
+	color:black;
+	margin-bottom:10px;
+}
+#prods_tabela{
+	width:100%;
+	height: auto;
+	float:right;
+}
+#produto_twitter{
+	margin:10px 10px 10px 10px;
+}
+.prod_nav{
+	text-align:center;
+	height:auto;
+	width:100%;
+	margin:10px 10px 10px 10px;
+}
+#prod_geral{
+	background-color:white;
+	height:inherit;
+	color:black;
+	width:100%;
+	float:right;
+}
+#prod_geral h2{
+	margin:10px 10px 10px 10px;
+}
+
+#prod_geral a{
+	text-decoration: none;
+	color:#000066;
+}
+
+#prod_geral li{
+	display:inline;
+	text-decoration: none;
+	color:#000066;
+}
+
+#prod_geral li #current{
+
+	text-decoration: underline;
+}
+
+#prod_geral a:hover{
+	text-decoration: blink;
+	color:#0000CC;
+}
+
+.prod_nav a{
+	font-size:20px;
+	margin:5px 5px 5px 5px;
+}	
+	
+
+#prod_desc{
+	text-align:center;
+	background:white;
+	width:100%;
+}
+
+#prod_imagem{
+	width:100%;
+	height:auto;
+}

@@ -1,0 +1,9 @@
+<?php 
+	include "conexao.php";
+$id	= $_POST["id"];
+$sql = mysql_query("DELETE FROM cor WHERE id_cor='$id' ") or die(mysql_error());
+if ($sql){
+				echo "Excluido com sucesso!<br/>"."<a href=\"?comp=listarCor\">Voltar</a>";
+		}else
+				echo "Erro durante o cadastro: ".mysql_error();
+?>
