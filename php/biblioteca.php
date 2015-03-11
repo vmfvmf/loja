@@ -127,15 +127,14 @@ function NomeUsuario($usr){
 function buscaProds($pos, $cat, $marca, $promo){
 	$texto="";
 	
-	$sql = 'select cod, categoria, tamanho, cor, genero, imagem, marca, preco_venda, descricao, 
-		nome, desconto, vigente from view_produto_detalhes where estoque > 0 ';
+	$sql = 'select cod, categoria, tamanho, cor, genero, imagem, marca, preco_venda, descricao, descricao, desconto from view_produto_detalhes where estoque > 0 ';
 	
 	
-	if($promo > 0) 	$sql .= " and id_promocao = $promo and vigente = 1 ";
-	if($marca > 0)  $sql .= " and id_marca = $marca ";
-	if($cat > 0) 	$sql .= " and id_categoria = $cat ";
+	//if($promo > 0) 	$sql .= " and id_promocao = $promo and vigente = 1 ";
+	//if($marca > 0)  $sql .= " and id_marca = $marca ";
+	//if($cat > 0) 	$sql .= " and id_categoria = $cat ";
 	
-	$sql .= " limit $pos, 16 ";
+	//$sql .= " limit $pos, 16 ";
 	
 	$result = mysql_query($sql);
 	$num = mysql_num_rows($result);
